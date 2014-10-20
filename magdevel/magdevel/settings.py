@@ -49,7 +49,8 @@ INSTALLED_APPS = (
     'magcore.publisher',
     'magcore.company',
     'magcore.app',
-    'magcore.accounts'
+    'magcore.accounts',
+    'magad',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -129,3 +130,11 @@ if DEBUG:
     EMAIL_HOST_PASSWORD = ''
     EMAIL_PORT = 1025
     EMAIL_USE_TLS = False
+
+PUBLISHER_INTEREST_CATEGORY_MODEL = 'magad.InterestCategory'
+PUBLISHER_INTEREST_CHANNEL_MODEL = 'magad.InterestChannel'
+PUBLISHER_INTEREST_CHANNEL_CATEGORY_MODEL = 'magad.InterestChannelCategory'
+PUBLISHER_PUBLISHER_MODEL = 'magad.Publisher'
+PUBLISHER_PUBLICATION_MODEL = 'magad.Publication'
+PUBLISHER_ISSUE_MODEL = 'magad.Issue'
+PUBLISHER_PAGE_MODEL = 'magad.Page'
