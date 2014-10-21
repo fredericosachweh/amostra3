@@ -147,3 +147,7 @@ PUBLISHER_PUBLISHER_MODEL = 'magad.Publisher'
 PUBLISHER_PUBLICATION_MODEL = 'magad.Publication'
 PUBLISHER_ISSUE_MODEL = 'magad.Issue'
 PUBLISHER_PAGE_MODEL = 'magad.Page'
+
+FILE_UPLOAD_HANDLERS = (
+    "django.core.files.uploadhandler.TemporaryFileUploadHandler",
+)
