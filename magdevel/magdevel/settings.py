@@ -79,6 +79,8 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'magdevel_db',
         'USER': 'user',
+        'PASSWORD': 'user',
+        'HOST': 'localhost'
     }
 }
 
@@ -158,6 +160,6 @@ FILE_UPLOAD_HANDLERS = (
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if HOST_NAME == '10.203.163.169':
-    MEDIA_URL = 'http://' + HOST_NAME + '/media/'
+    MEDIA_URL = 'http://sdk-teste.admag.com.br/media/'
 else:
     MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
