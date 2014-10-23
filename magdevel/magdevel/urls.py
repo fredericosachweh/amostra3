@@ -7,6 +7,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'magdevel.views.home', name='home'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^configuration/', include('magcore.configuration.urls')),
     url(r'^device/', include('magcore.device.urls')),
     url(r'^geo/', include('magcore.geo.urls')),
     url(r'^publisher/', include('magcore.publisher.urls')),

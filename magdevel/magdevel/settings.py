@@ -52,6 +52,7 @@ INSTALLED_APPS = (
     'magcore.device',
     'magcore.publisher',
     'magcore.company',
+    'magcore.configuration',
     'magcore.app',
     'magcore.accounts',
     'magad',
