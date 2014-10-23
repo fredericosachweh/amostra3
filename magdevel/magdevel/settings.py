@@ -10,6 +10,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import socket
+
+HOST_NAME = socket.gethostbyname(socket.gethostname())
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -151,3 +154,10 @@ PUBLISHER_PAGE_MODEL = 'magad.Page'
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+if HOST_NAME == '10.203.163.169':
+    MEDIA_URL = 'http://' + HOST_NAME + '/media/'
+else:
+    MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
