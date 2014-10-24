@@ -48,6 +48,7 @@ INSTALLED_APPS = (
     'localflavor',
     'reversion',
     'password_reset',
+    'magad',
     'magcore.identify',
     'magcore.device',
     'magcore.publisher',
@@ -55,7 +56,6 @@ INSTALLED_APPS = (
     'magcore.configuration',
     'magcore.app',
     'magcore.accounts',
-    'magad',
     'corsheaders'
 )
 
