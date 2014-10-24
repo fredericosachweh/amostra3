@@ -55,6 +55,7 @@ INSTALLED_APPS = (
     'magcore.app',
     'magcore.accounts',
     'magad',
+    'corsheaders'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,6 +69,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_user_agents.middleware.UserAgentMiddleware',
 )
+CORS_ORIGIN_ALLOW_ALL=True
 
 ROOT_URLCONF = 'magdevel.urls'
 
@@ -152,6 +154,7 @@ PUBLISHER_PUBLISHER_MODEL = 'magad.Publisher'
 PUBLISHER_PUBLICATION_MODEL = 'magad.Publication'
 PUBLISHER_ISSUE_MODEL = 'magad.Issue'
 PUBLISHER_PAGE_MODEL = 'magad.Page'
+APP_DEVICE_APP_MODEL = 'magad.DeviceApp'
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
