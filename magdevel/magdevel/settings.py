@@ -137,7 +137,8 @@ REST_FRAMEWORK = {
     ),
     'PAGINATE_BY': 10,
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
-    'URL_FIELD_NAME': 'self'
+    'URL_FIELD_NAME': 'self',
+    'EXCEPTION_HANDLER': 'magdevel.custom_exception_handler'
 }
 
 AUTH_USER_MODEL = 'accounts.User'
