@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'reversion',
     'password_reset',
     'magad',
+    'magcore.log',
     'magcore.identify',
     'magcore.device',
     'magcore.publisher',
@@ -156,6 +157,7 @@ PUBLISHER_PUBLICATION_MODEL = 'magad.Publication'
 PUBLISHER_ISSUE_MODEL = 'magad.Issue'
 PUBLISHER_PAGE_MODEL = 'magad.Page'
 APP_DEVICE_APP_MODEL = 'magad.DeviceApp'
+APP_APP_MODEL = 'magad.App'
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
