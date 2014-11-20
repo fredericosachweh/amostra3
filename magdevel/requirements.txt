@@ -10,7 +10,7 @@ django-extensions==1.4.0
 django-filter==0.7
 django-formwizard==1.0
 django-ipware==0.0.8
-#-e git+https://github.com/django/django-localflavor.git@c45305cf71f851243643b88ba187057f9ccfab98#egg=django_localflavor-origin/HEAD
+-e git+https://github.com/django/django-localflavor.git@c45305cf71f851243643b88ba187057f9ccfab98#egg=django_localflavor-origin
 django-password-reset==0.7
 django-reversion==1.8.4
 django-user-agents==0.3.0
