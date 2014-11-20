@@ -162,6 +162,7 @@ PUBLISHER_PAGE_MODEL = 'magad.Page'
 APP_DEVICE_APP_MODEL = 'magad.DeviceApp'
 APP_APP_MODEL = 'magad.App'
 LOG_DEVICE_LOG_MODEL = 'magad.DeviceLog'
+LOG_ERROR_JS_MODEL = 'magad.LogErrorJS'
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
