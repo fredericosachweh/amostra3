@@ -81,10 +81,10 @@ ROOT_URLCONF = 'magdevel.urls'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'magdevel_db',
-        'USER': 'user',
-        'PASSWORD': 'user',
-        'HOST': 'localhost'
+        'NAME': 'admag',
+        'USER': 'admag',
+        'PASSWORD': 'n43k650s013j43',
+        'HOST': 'admag.cm5ca3zkxqlg.sa-east-1.rds.amazonaws.com'
     }
 }
 
@@ -174,3 +174,9 @@ if HOST_NAME == '10.203.163.169':
     MEDIA_URL = 'http://sdk-teste.admag.com.br/media/'
 else:
     MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
+
+
+try:
+    from magdevel.local_settings import *
+except FileExistsError:
+    pass
