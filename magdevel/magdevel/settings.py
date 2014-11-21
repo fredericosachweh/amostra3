@@ -170,8 +170,8 @@ FILE_UPLOAD_HANDLERS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if HOST_NAME == '10.203.163.169':
-    MEDIA_URL = 'http://sdk-teste.admag.com.br/media/'
+if HOST_NAME == '172.31.17.183':
+    MEDIA_URL = 'ec2-54-94-157-85.sa-east-1.compute.amazonaws.com/media/'
 else:
     MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
 
