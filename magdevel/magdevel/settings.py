@@ -178,5 +178,5 @@ else:
 
 try:
     from magdevel.local_settings import *
-except FileExistsError:
+except:
     pass
