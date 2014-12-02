@@ -57,7 +57,7 @@ INSTALLED_APPS = (
     'magcore.configuration',
     'magcore.app',
     'magcore.accounts',
-    'corsheaders'
+    'corsheaders',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,12 +81,14 @@ ROOT_URLCONF = 'magdevel.urls'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'magdevel_db',
-        'USER': 'user',
-        'PASSWORD': 'user',
-        'HOST': 'localhost'
+        'NAME': 'admag',
+        'USER': 'admag',
+        'PASSWORD': 'n43k650s013j43',
+        'HOST': 'admag.cm5ca3zkxqlg.sa-east-1.rds.amazonaws.com'
     }
 }
+
+MONGO_CLIENT_URL = 'mongodb://localhost:27017'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -160,6 +162,9 @@ PUBLISHER_PAGE_MODEL = 'magad.Page'
 APP_DEVICE_APP_MODEL = 'magad.DeviceApp'
 APP_APP_MODEL = 'magad.App'
 LOG_DEVICE_LOG_MODEL = 'magad.DeviceLog'
+
+DEVICE_SYSTEM_IOS='iOS'
+DEVICE_SYSTEM_ANDROID='Android'
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
