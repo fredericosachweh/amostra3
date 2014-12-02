@@ -89,6 +89,7 @@ DATABASES = {
 }
 
 MONGO_CLIENT_URL = 'mongodb://localhost:27017'
+POSTGIS_VERSION = ( 2, 1 )
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -162,6 +163,8 @@ PUBLISHER_PAGE_MODEL = 'magad.Page'
 APP_DEVICE_APP_MODEL = 'magad.DeviceApp'
 APP_APP_MODEL = 'magad.App'
 LOG_DEVICE_LOG_MODEL = 'magad.DeviceLog'
+LOG_ERROR_JS_MODEL = 'magad.LogErrorJS'
+PUBLISHER_DEVELOPER_MODEL = 'magad.Developer'
 
 DEVICE_SYSTEM_IOS='iOS'
 DEVICE_SYSTEM_ANDROID='Android'
@@ -172,7 +175,13 @@ FILE_UPLOAD_HANDLERS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if HOST_NAME == '10.203.163.169':
-    MEDIA_URL = 'http://sdk-teste.admag.com.br/media/'
+if HOST_NAME == '172.31.17.183':
+    MEDIA_URL = 'ec2-54-94-157-85.sa-east-1.compute.amazonaws.com/media/'
 else:
     MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
+
+
+try:
+    from magdevel.local_settings import *
+except:
+    pass
