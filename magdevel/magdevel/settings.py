@@ -61,7 +61,6 @@ INSTALLED_APPS = [
     'reversion',
     'password_reset',
     'magad',
-    'magad.reports',
     'magcore.log',
     'magcore.identify',
     'magcore.device',
