@@ -41,6 +41,16 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    "django.core.context_processors.request",
+)
 
 # Application definition
 
@@ -61,7 +71,6 @@ INSTALLED_APPS = (
     'reversion',
     'password_reset',
     'magad',
-    'magad.reports',
     'magcore.log',
     'magcore.identify',
     'magcore.device',
@@ -108,9 +117,9 @@ mongoengine.connect("admag")
 MONGO_CLIENT_URL = 'mongodb://localhost:27017'
 
 SESSION_ENGINE = 'mongoengine.django.sessions'
-AUTHENTICATION_BACKENDS = (
-    'mongoengine.django.auth.MongoEngineBackend',
-)
+#AUTHENTICATION_BACKENDS = (
+    #'mongoengine.django.auth.MongoEngineBackend',
+#)
 
 POSTGIS_VERSION = ( 2, 1 )
 
@@ -202,6 +211,7 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'accounts.User'
+LOGIN_URL = '/'
 
 PUBLISHER_INTEREST_CATEGORY_MODEL = 'magad.InterestCategory'
 PUBLISHER_INTEREST_CHANNEL_MODEL = 'magad.InterestChannel'
