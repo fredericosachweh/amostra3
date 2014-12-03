@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import socket
+import mongoengine
+
 
 HOST_NAME = socket.gethostbyname(socket.gethostname())
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -42,7 +44,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -59,6 +61,7 @@ INSTALLED_APPS = (
     'reversion',
     'password_reset',
     'magad',
+    'magad.reports',
     'magcore.log',
     'magcore.identify',
     'magcore.device',
@@ -67,8 +70,9 @@ INSTALLED_APPS = (
     'magcore.configuration',
     'magcore.app',
     'magcore.accounts',
-    'corsheaders'
-)
+    'corsheaders',
+
+]
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -96,7 +100,17 @@ DATABASES = {
         'PASSWORD': 'n43k650s013j43',
         'HOST': 'admag.cm5ca3zkxqlg.sa-east-1.rds.amazonaws.com'
     }
+
 }
+
+
+mongoengine.connect("admag")
+MONGO_CLIENT_URL = 'mongodb://localhost:27017'
+
+SESSION_ENGINE = 'mongoengine.django.sessions'
+AUTHENTICATION_BACKENDS = (
+    'mongoengine.django.auth.MongoEngineBackend',
+)
 
 POSTGIS_VERSION = ( 2, 1 )
 
@@ -175,6 +189,9 @@ APP_APP_MODEL = 'magad.App'
 LOG_DEVICE_LOG_MODEL = 'magad.DeviceLog'
 LOG_ERROR_JS_MODEL = 'magad.LogErrorJS'
 PUBLISHER_DEVELOPER_MODEL = 'magad.Developer'
+
+DEVICE_SYSTEM_IOS='iOS'
+DEVICE_SYSTEM_ANDROID='Android'
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
