@@ -108,9 +108,9 @@ mongoengine.connect("admag")
 MONGO_CLIENT_URL = 'mongodb://localhost:27017'
 
 SESSION_ENGINE = 'mongoengine.django.sessions'
-AUTHENTICATION_BACKENDS = (
-    'mongoengine.django.auth.MongoEngineBackend',
-)
+#AUTHENTICATION_BACKENDS = (
+    #'mongoengine.django.auth.MongoEngineBackend',
+#)
 
 POSTGIS_VERSION = ( 2, 1 )
 
