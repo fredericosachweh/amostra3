@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for mag_core_project project.
 
@@ -12,6 +13,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 import socket
 import mongoengine
+
 
 
 HOST_NAME = socket.gethostbyname(socket.gethostname())
@@ -79,7 +81,7 @@ INSTALLED_APPS = (
     'magcore.configuration',
     'magcore.app',
     'magcore.accounts',
-    'magcore.aws.s3',
+    'magcore.aws',
     'corsheaders',
 )
 
@@ -147,7 +149,7 @@ STATICFILES_FINDERS = (
 
 # STATIC SETTINGS AWS
 AWS_STATIC_BUCKET_NAME = 'static.admag.com.br'
-AWS_STATIC_CUSTOM_DOMAIN = 'd3kzpx40kz8tmb.cloudfront.net'
+AWS_STATIC_CUSTOM_DOMAIN = 'd1g3swsxeb66x1.cloudfront.net'
 
 STATICFILES_STORAGE = 'magcore.aws.s3.storage.StaticStorage'
 STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
@@ -162,7 +164,7 @@ S3_ACCESS_KEY_ID = 'AKIAIHGAT5XEG7W4JVVA'
 S3_SECRET_ACCESS_KEY = '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'
 
 # MEDIA SETTINGS
-AWS_MEDIA_BUCKET_NAME = 'static.admag.com.br'
+AWS_MEDIA_BUCKET_NAME = 'media.admag.com.br'
 AWS_MEDIA_CUSTOM_DOMAIN = 'd29u39lgq6x9m.cloudfront.net'
 AWS_ADVERTISEMENT_BUCKET_NAME = 'pecas.admag.com.br'
 AWS_ADVERTISEMENT_CUSTOM_DOMAIN = 'd3kzpx40kz8tmb.cloudfront.net'
@@ -171,6 +173,8 @@ MEDIA_FILE_STORAGE = 'magcore.aws.s3.storage.MediaStorage'
 DEFAULT_FILE_STORAGE = MEDIA_FILE_STORAGE
 MEDIA_ROOT = os.path.join(SITE_ROOT, 'media')
 MEDIA_URL = 'https://{}/'.format(AWS_MEDIA_CUSTOM_DOMAIN)
+TEMP_DIR = os.path.join(MEDIA_ROOT, 'tmp')
+
 
 # Django cache settings
 CACHES = {
@@ -233,12 +237,6 @@ FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-if HOST_NAME == '172.31.17.183':
-    MEDIA_URL = 'ec2-54-94-157-85.sa-east-1.compute.amazonaws.com/media/'
-else:
-    MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
 
 if DEBUG:
     STATIC_URL = '/static/'
