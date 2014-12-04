@@ -166,8 +166,6 @@ S3_SECRET_ACCESS_KEY = 'RxaUbdMZQ1DbGeCVJGbeqRcvoMrgbplKRInOpuM1'
 # MEDIA SETTINGS
 AWS_MEDIA_BUCKET_NAME = 'media.admag.com.br'
 AWS_MEDIA_CUSTOM_DOMAIN = 'd29u39lgq6x9m.cloudfront.net'
-AWS_ADVERTISEMENT_BUCKET_NAME = 'pecas.admag.com.br'
-AWS_ADVERTISEMENT_CUSTOM_DOMAIN = 'd3kzpx40kz8tmb.cloudfront.net'
 MEDIA_FILE_STORAGE = 'magcore.aws.s3.storage.MediaStorage'
 
 DEFAULT_FILE_STORAGE = MEDIA_FILE_STORAGE
