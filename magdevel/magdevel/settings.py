@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for mag_core_project project.
 
@@ -14,22 +15,33 @@ import socket
 import mongoengine
 
 
+
 HOST_NAME = socket.gethostbyname(socket.gethostname())
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+# general
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE_ROOT = os.path.dirname(PROJECT_ROOT)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+$*1=)6%(#cthiw7e07@^5-bhs#c9=xdnc68f=vu^ygc&s6#8k'
+SECRET_KEY = '+n$*1=)6%(#ctian27e07@^5-bhs#c9=xdc68f=vu^ygc&s6#8k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+# admins and managers
+ADMINS = (
+    ('Giancarlo Razzolini', 'gian@magtab.com'),
+    ('Giancarlo Rubio', 'rubio@magtab.com'),
+)
+MANAGERS = ADMINS
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.auth.context_processors.auth",
@@ -44,7 +56,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -69,10 +81,10 @@ INSTALLED_APPS = [
     'magcore.configuration',
     'magcore.app',
     'magcore.accounts',
+    'magcore.aws',
     'corsheaders',
     'googlecharts',
-
-]
+)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -131,17 +143,53 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'magcore/static'),
-)
-
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
+
+# STATIC SETTINGS AWS
+AWS_STATIC_BUCKET_NAME = 'static.admag.com.br'
+AWS_STATIC_CUSTOM_DOMAIN = 'd1g3swsxeb66x1.cloudfront.net'
+
+STATICFILES_STORAGE = 'magcore.aws.s3.storage.StaticStorage'
+STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+STATIC_URL = 'https://{}/'.format(AWS_STATIC_CUSTOM_DOMAIN)
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(PROJECT_ROOT, 'magcore/static'),
+)
+
+# S3 KEYS
+S3_ACCESS_KEY_ID = 'AKIAIHGAT5XEG7W4JVVA'
+S3_SECRET_ACCESS_KEY = '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'
+
+# MEDIA SETTINGS
+AWS_MEDIA_BUCKET_NAME = 'media.admag.com.br'
+AWS_MEDIA_CUSTOM_DOMAIN = 'd29u39lgq6x9m.cloudfront.net'
+AWS_ADVERTISEMENT_BUCKET_NAME = 'pecas.admag.com.br'
+AWS_ADVERTISEMENT_CUSTOM_DOMAIN = 'd3kzpx40kz8tmb.cloudfront.net'
+MEDIA_FILE_STORAGE = 'magcore.aws.s3.storage.MediaStorage'
+
+DEFAULT_FILE_STORAGE = MEDIA_FILE_STORAGE
+MEDIA_ROOT = os.path.join(SITE_ROOT, 'media')
+MEDIA_URL = 'https://{}/'.format(AWS_MEDIA_CUSTOM_DOMAIN)
+TEMP_DIR = os.path.join(MEDIA_ROOT, 'tmp')
+
+
+# Django cache settings
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
+        'LOCATION': '127.0.0.1:11211'
+    },
+    'staticfiles': {
+        'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
+        'LOCATION': '127.0.0.1:11211',  # Like 127.0.0.1:11211
+        'TIMEOUT': 2592000, # Default is one month
+    }
+}
+
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
@@ -171,13 +219,6 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = '/'
 
-if DEBUG:
-    EMAIL_HOST = '127.0.0.1'
-    EMAIL_HOST_USER = ''
-    EMAIL_HOST_PASSWORD = ''
-    EMAIL_PORT = 1025
-    EMAIL_USE_TLS = False
-
 PUBLISHER_INTEREST_CATEGORY_MODEL = 'magad.InterestCategory'
 PUBLISHER_INTEREST_CHANNEL_MODEL = 'magad.InterestChannel'
 PUBLISHER_INTEREST_CHANNEL_CATEGORY_MODEL = 'magad.InterestChannelCategory'
@@ -198,13 +239,15 @@ FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if HOST_NAME == '172.31.17.183':
-    MEDIA_URL = 'ec2-54-94-157-85.sa-east-1.compute.amazonaws.com/media/'
-else:
-    MEDIA_URL = 'http://' + HOST_NAME + ':8000/media/'
-
+if DEBUG:
+    STATIC_URL = '/static/'
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+    EMAIL_HOST = '127.0.0.1'
+    EMAIL_HOST_USER = ''
+    EMAIL_HOST_PASSWORD = ''
+    EMAIL_PORT = 1025
+    EMAIL_USE_TLS = False
 
 try:
     from magdevel.local_settings import *
