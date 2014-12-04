@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'magcore.app',
     'magcore.accounts',
     'corsheaders',
+    'googlecharts',
 
 ]
 
@@ -145,6 +146,7 @@ STATICFILES_FINDERS = (
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
     os.path.join(BASE_DIR,  'magcore/templates'),
+    os.path.join(BASE_DIR,  'magad/reports/templates'),
 )
 
 REST_FRAMEWORK = {
