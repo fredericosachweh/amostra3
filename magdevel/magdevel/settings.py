@@ -34,7 +34,8 @@ DEBUG = False
 
 # admins and managers
 ADMINS = (
-    ('Giancarlo Rubio', 'rubio@magtab.com'),
+    ('Giancarlo Rubio', 'gianrubio@gmail.com'),
+    ('Frederico Matos', 'frederico.sachweh@gmail.com'),
 )
 MANAGERS = ADMINS
 
@@ -270,16 +271,6 @@ DEVICE_SYSTEM_ANDROID='Android'
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
 )
-
-
-if DEBUG:
-    STATIC_URL = '/static/'
-    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-    EMAIL_HOST = '127.0.0.1'
-    EMAIL_HOST_USER = ''
-    EMAIL_HOST_PASSWORD = ''
-    EMAIL_PORT = 1025
-    EMAIL_USE_TLS = False
 
 try:
     from magdevel.local_settings import *
