@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from magdevel import settings
 
 __author__ = 'frederico'

@@ -34,7 +34,6 @@ DEBUG = False
 
 # admins and managers
 ADMINS = (
-    ('Giancarlo Razzolini', 'gian@magtab.com'),
     ('Giancarlo Rubio', 'rubio@magtab.com'),
 )
 MANAGERS = ADMINS
@@ -97,6 +96,41 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_user_agents.middleware.UserAgentMiddleware',
 )
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': ("[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] "
+                       "%(message)s"),
+            'datefmt': '%d/%b/%Y %H:%M:%S'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler'
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+
+
 CORS_ORIGIN_ALLOW_ALL=True
 
 ROOT_URLCONF = 'magdevel.urls'

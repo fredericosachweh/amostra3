@@ -41,3 +41,4 @@ django-google-charts
 boto==2.34.0
 django-storages==1.1.8
 pylibmc==1.3.0
+twiested==14.0.2
