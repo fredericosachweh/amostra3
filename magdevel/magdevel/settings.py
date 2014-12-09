@@ -34,7 +34,6 @@ DEBUG = False
 
 # admins and managers
 ADMINS = (
-    ('Giancarlo Razzolini', 'gian@magtab.com'),
     ('Giancarlo Rubio', 'rubio@magtab.com'),
 )
 MANAGERS = ADMINS
@@ -97,6 +96,41 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_user_agents.middleware.UserAgentMiddleware',
 )
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': ("[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] "
+                       "%(message)s"),
+            'datefmt': '%d/%b/%Y %H:%M:%S'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler'
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+
+
 CORS_ORIGIN_ALLOW_ALL=True
 
 ROOT_URLCONF = 'magdevel.urls'
@@ -167,8 +201,6 @@ S3_SECRET_ACCESS_KEY = 'RxaUbdMZQ1DbGeCVJGbeqRcvoMrgbplKRInOpuM1'
 # MEDIA SETTINGS
 AWS_MEDIA_BUCKET_NAME = 'media.admag.com.br'
 AWS_MEDIA_CUSTOM_DOMAIN = 'd29u39lgq6x9m.cloudfront.net'
-AWS_ADVERTISEMENT_BUCKET_NAME = 'pecas.admag.com.br'
-AWS_ADVERTISEMENT_CUSTOM_DOMAIN = 'd3kzpx40kz8tmb.cloudfront.net'
 MEDIA_FILE_STORAGE = 'magcore.aws.s3.storage.MediaStorage'
 
 DEFAULT_FILE_STORAGE = MEDIA_FILE_STORAGE
