@@ -15,7 +15,6 @@ import socket
 import mongoengine
 
 
-
 HOST_NAME = socket.gethostbyname(socket.gethostname())
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -34,7 +33,8 @@ DEBUG = False
 
 # admins and managers
 ADMINS = (
-    ('Giancarlo Rubio', 'rubio@magtab.com'),
+    ('Giancarlo Rubio', 'gianrubio@gmail.com'),
+    ('Frederico Matos', 'frederico.sachweh@gmail.com'),
 )
 MANAGERS = ADMINS
 
@@ -130,8 +130,7 @@ LOGGING = {
     },
 }
 
-
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'magdevel.urls'
 
@@ -149,13 +148,12 @@ DATABASES = {
 
 }
 
-
 mongoengine.connect("admag")
 MONGO_CLIENT_URL = 'mongodb://localhost:27017'
 
 SESSION_ENGINE = 'mongoengine.django.sessions'
-#AUTHENTICATION_BACKENDS = (
-    #'mongoengine.django.auth.MongoEngineBackend',
+# AUTHENTICATION_BACKENDS = (
+#'mongoengine.django.auth.MongoEngineBackend',
 #)
 
 POSTGIS_VERSION = ( 2, 1 )
@@ -218,15 +216,14 @@ CACHES = {
     'staticfiles': {
         'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache',
         'LOCATION': '127.0.0.1:11211',  # Like 127.0.0.1:11211
-        'TIMEOUT': 2592000, # Default is one month
+        'TIMEOUT': 2592000,  # Default is one month
     }
 }
 
-
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  'templates'),
-    os.path.join(BASE_DIR,  'magcore/templates'),
-    os.path.join(BASE_DIR,  'magad/reports/templates'),
+    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'magcore/templates'),
+    os.path.join(BASE_DIR, 'magad/reports/templates'),
 )
 
 REST_FRAMEWORK = {
@@ -264,22 +261,14 @@ LOG_DEVICE_LOG_MODEL = 'magad.DeviceLog'
 LOG_ERROR_JS_MODEL = 'magad.LogErrorJS'
 PUBLISHER_DEVELOPER_MODEL = 'magad.Developer'
 
-DEVICE_SYSTEM_IOS='iOS'
-DEVICE_SYSTEM_ANDROID='Android'
+DEVICE_SYSTEM_IOS = 'iOS'
+DEVICE_SYSTEM_ANDROID = 'Android'
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.TemporaryFileUploadHandler",
 )
 
-
-if DEBUG:
-    STATIC_URL = '/static/'
-    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-    EMAIL_HOST = '127.0.0.1'
-    EMAIL_HOST_USER = ''
-    EMAIL_HOST_PASSWORD = ''
-    EMAIL_PORT = 1025
-    EMAIL_USE_TLS = False
+GEOIP_PATH = '/usr/share/GeoIP'
 
 try:
     from magdevel.local_settings import *
