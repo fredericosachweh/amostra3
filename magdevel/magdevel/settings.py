@@ -83,6 +83,8 @@ INSTALLED_APPS = (
     'magcore.aws',
     'corsheaders',
     'googlecharts',
+    'djangobower',
+    'compressor',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -178,7 +180,31 @@ USE_TZ = True
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'djangobower.finders.BowerFinder',
+    'compressor.finders.CompressorFinder',
 )
+
+BOWER_COMPONENTS_ROOT = os.path.join(PROJECT_ROOT, 'magcore/static/components')
+
+BOWER_INSTALLED_APPS = (
+    'jquery#1.9.1',
+    'foundation',
+    'moment',
+    'kalendae',
+    'jquery-maskedinput',
+    'font-awesome',
+)
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-sass',
+    ('sass -I "%s/bower_components/foundation/scss" "{infile}" '
+      '"{outfile}"') % BOWER_COMPONENTS_ROOT),
+    ('text/x-sass',
+    ('sass -I "%s/bower_components/font-awesome/scss" "{infile}" '
+      '"{outfile}"') % BOWER_COMPONENTS_ROOT),
+)
+
+COMPRESS_OUTPUT_DIR = ''
 
 # STATIC SETTINGS AWS
 AWS_STATIC_BUCKET_NAME = 'static.admag.com.br'
@@ -251,6 +277,7 @@ LOGIN_URL = '/'
 PUBLISHER_INTEREST_CATEGORY_MODEL = 'magad.InterestCategory'
 PUBLISHER_INTEREST_CHANNEL_MODEL = 'magad.InterestChannel'
 PUBLISHER_INTEREST_CHANNEL_CATEGORY_MODEL = 'magad.InterestChannelCategory'
+PUBLISHER_DEVELOPER_MODEL = 'magad.Developer'
 PUBLISHER_PUBLISHER_MODEL = 'magad.Publisher'
 PUBLISHER_PUBLICATION_MODEL = 'magad.Publication'
 PUBLISHER_ISSUE_MODEL = 'magad.Issue'
@@ -259,7 +286,6 @@ APP_DEVICE_APP_MODEL = 'magad.DeviceApp'
 APP_APP_MODEL = 'magad.App'
 LOG_DEVICE_LOG_MODEL = 'magad.DeviceLog'
 LOG_ERROR_JS_MODEL = 'magad.LogErrorJS'
-PUBLISHER_DEVELOPER_MODEL = 'magad.Developer'
 
 DEVICE_SYSTEM_IOS = 'iOS'
 DEVICE_SYSTEM_ANDROID = 'Android'

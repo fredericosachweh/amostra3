@@ -5,10 +5,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.core.urlresolvers import reverse
 from django.views.generic import RedirectView
+from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
     # Examples:
     url(r'^', include('magcore.accounts.urls', namespace='accounts')),
+    #url(r'^', TemplateView.as_view(template_name="base.html")),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^configuration/', include('magcore.configuration.urls')),
     url(r'^device/', include('magcore.device.urls')),
