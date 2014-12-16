@@ -187,12 +187,12 @@ STATICFILES_FINDERS = (
 BOWER_COMPONENTS_ROOT = os.path.join(PROJECT_ROOT, 'magcore/static/components')
 
 BOWER_INSTALLED_APPS = (
-    'jquery#1.9.1',
-    'foundation',
-    'moment',
-    'kalendae',
-    'jquery-maskedinput',
-    'font-awesome',
+    'jquery#2.1.0',
+    'foundation#5.4.7',
+    'moment#2.8.4',
+    'kalendae#0.4.1',
+    'jquery-maskedinput#1.4.0',
+    'font-awesome#4.2.0',
 )
 
 COMPRESS_PRECOMPILERS = (
