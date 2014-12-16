@@ -196,12 +196,7 @@ BOWER_INSTALLED_APPS = (
 )
 
 COMPRESS_PRECOMPILERS = (
-    ('text/x-sass',
-    ('sass -I "%s/bower_components/foundation/scss" "{infile}" '
-      '"{outfile}"') % BOWER_COMPONENTS_ROOT),
-    ('text/x-sass',
-    ('sass -I "%s/bower_components/font-awesome/scss" "{infile}" '
-      '"{outfile}"') % BOWER_COMPONENTS_ROOT),
+    ('text/x-sass', 'django_libsass.SassCompiler'),
 )
 
 # STATIC SETTINGS AWS
@@ -216,10 +211,10 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'magcore/static'),
 )
 
+COMPRESS_ROOT = STATIC_ROOT
 COMPRESS_URL = STATIC_URL
-COMPRESS_STORAGE = STATICFILES_STORAGE
+COMPRESS_ENABLE = True
 COMPRESS_OFFLINE = True
-COMPRESS_CSS_HASHING_METHOD = None
 
 # S3 KEYS
 S3_ACCESS_KEY_ID = 'AKIAIHGAT5XEG7W4JVVA'
