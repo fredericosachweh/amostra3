@@ -1,0 +1,1249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-19 15:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: magad/admin.py:47 magcore/publisher/models.py:22
+msgid "Categories"
+msgstr "Categorias"
+
+#: magad/forms.py:21 magad/templates/advertisement_list.html:7
+#: magad/views.py:169 magcore/templates/base.html:25
+#: magcore/templates/base_old.html:36
+msgid "Agency"
+msgstr "Agência"
+
+#: magad/forms.py:40 magad/templates/advertisement_list.html:8
+#: magad/views.py:66
+msgid "Advertiser"
+msgstr "Anunciantes"
+
+#: magad/forms.py:81
+msgid "Insert values without \".\""
+msgstr "Insira o valor sem \".\""
+
+#: magad/forms.py:175
+msgid "Campaign is in progress and can not be edited."
+msgstr "Campanha está em andamento e não pode ser editada"
+
+#: magad/models/magad.py:92
+msgid "Advertisers who are clients of this agency"
+msgstr "Anunciantes que são clientes desta agência"
+
+#: magad/models/magad.py:95
+msgid "Agencies"
+msgstr "Agencias"
+
+#: magad/models/magad.py:112 magad/templates/advertisement_list.html:6
+#: magad/templates/advertiser_list.html:6 magad/templates/agency_list.html:6
+#: magcore/accounts/templates/user_list.html:5
+#: magcore/configuration/models.py:8 magcore/configuration/models.py:22
+#: magcore/configuration/models.py:39 magcore/device/models.py:11
+#: magcore/device/models.py:51 magcore/device/models.py:65
+#: magcore/device/models.py:180 magcore/device/models.py:207
+#: magcore/log/models.py:15 magcore/log/models.py:19
+#: magcore/publisher/models.py:92
+#: magcore/publisher/templates/publication_list.html:5
+#: magcore/publisher/templates/publisher_list.html:5
+msgid "Name"
+msgstr "Nome"
+
+#: magad/models/magad.py:112
+msgid "The name for this advertisement."
+msgstr "Nome do anunciante"
+
+#: magad/models/magad.py:114
+msgid "The Agency responsible for this advertisement."
+msgstr "Agência responsável pelo anúncio"
+
+#: magad/models/magad.py:116
+msgid "The advertiser of this advertisement."
+msgstr "Anunciante do anúncio"
+
+#: magad/models/magad.py:117
+msgid "contract number"
+msgstr "PI"
+
+#: magad/models/magad.py:118
+msgid "Value of contract"
+msgstr "Valor do PI"
+
+#: magad/models/magad.py:119 magad/models/magad.py:285
+msgid "Planned Insertions"
+msgstr "Insercões planejadas"
+
+#: magad/models/magad.py:120 magad/models/magad.py:286
+msgid "Total number of insertions planned"
+msgstr "Quantida de inserções planejadas"
+
+#: magad/models/magad.py:121
+#, fuzzy
+#| msgid "Value of contract"
+msgid "Attachement of contract"
+msgstr "Anexo do PI"
+
+#: magad/models/magad.py:122 magad/models/magad.py:141
+#: magad/models/magad.py:189 magad/models/magad.py:332
+#: magad/models/magad.py:456 magad/models/magad.py:498
+#: magad/templates/advertisement_list.html:10 magcore/log/models.py:103
+msgid "Created at"
+msgstr "Criado em"
+
+#: magad/models/magad.py:124 magad/models/magad.py:191
+#: magad/models/magad.py:334 magad/models/magad.py:458
+msgid "Updated at"
+msgstr "Alterado em"
+
+#: magad/models/magad.py:138
+msgid "SDK version."
+msgstr "Versão do SDK"
+
+#: magad/models/magad.py:139
+msgid "Repository URL"
+msgstr "Url do repósitorio"
+
+#: magad/models/magad.py:140
+msgid "URL of the repository for this SDK version"
+msgstr "Url do reposiorio para esta versão do SDK"
+
+#: magad/models/magad.py:177
+msgid "The advertisement that this screen belongs"
+msgstr "Anúncio que esta tela pertence"
+
+#: magad/models/magad.py:181
+msgid "All compatibles SDKs"
+msgstr "Todos os SDK's compatíveis"
+
+#: magad/models/magad.py:183
+msgid "Screenshoot"
+msgstr ""
+
+#: magad/models/magad.py:186
+msgid "The screenshoot of adscreen"
+msgstr "Screenshot da Tela"
+
+#: magad/models/magad.py:259
+msgid "Urgent"
+msgstr "Urgente"
+
+#: magad/models/magad.py:260
+msgid "High"
+msgstr "Alto"
+
+#: magad/models/magad.py:261
+msgid "Default"
+msgstr ""
+
+#: magad/models/magad.py:262
+msgid "Low"
+msgstr "Baixo"
+
+#: magad/models/magad.py:263
+msgid "Very low"
+msgstr "Muito Baixo"
+
+#: magad/models/magad.py:267
+msgid "Waiting start"
+msgstr "Aguardando início"
+
+#: magad/models/magad.py:277
+msgid "Campaign Name"
+msgstr "Nome da campanha"
+
+#: magad/models/magad.py:279
+msgid "Description"
+msgstr "Descriçaõ"
+
+#: magad/models/magad.py:280
+msgid "Brief description of the campaign, it will be seen by users"
+msgstr "Breve descrição da campanha, será exibida aos editores"
+
+#: magad/models/magad.py:281
+msgid "Observations"
+msgstr "Observações"
+
+#: magad/models/magad.py:282
+msgid "Internal observations"
+msgstr "Observações da ADMAG"
+
+#: magad/models/magad.py:284
+msgid "The advertisement which this campaign will distribute"
+msgstr "Anunciante"
+
+#: magad/models/magad.py:287
+msgid "value"
+msgstr "Valor do PI"
+
+#: magad/models/magad.py:289
+msgid "already inserted"
+msgstr "Quantidade de inserções"
+
+#: magad/models/magad.py:290
+msgid "how much has already inserted"
+msgstr "Quantas inserções foram feitas"
+
+#: magad/models/magad.py:291
+msgid "deliverability"
+msgstr "Prioridade"
+
+#: magad/models/magad.py:292
+msgid "The higher the value the higher the delivery priority for this campaign"
+msgstr "Quanto mais alta a prioridade, mais inserções terá esta campanha"
+
+#: magad/models/magad.py:296
+msgid "Starts at"
+msgstr "Início"
+
+#: magad/models/magad.py:297
+msgid "When the distribution starts"
+msgstr "Data de início da distribuição"
+
+#: magad/models/magad.py:298
+msgid "Ends at"
+msgstr "Finaliza em"
+
+#: magad/models/magad.py:299
+msgid "When the distribution ends"
+msgstr "Finaliza em"
+
+#: magad/models/magad.py:300
+msgid "Daily start at"
+msgstr "Início diário"
+
+#: magad/models/magad.py:301
+msgid "Which time of day distribution starts"
+msgstr ""
+
+#: magad/models/magad.py:304
+msgid "Where advertisement country will be delivered."
+msgstr ""
+
+#: magad/models/magad.py:308
+msgid "Where advertisement region will be delivered."
+msgstr ""
+
+#: magad/models/magad.py:312
+msgid "Where advertisement city will be delivered."
+msgstr ""
+
+#: magad/models/magad.py:316
+msgid "Where advertisement device system will be delivered."
+msgstr ""
+
+#: magad/models/magad.py:320
+msgid "Where advertisement device model will be delivered."
+msgstr ""
+
+#: magad/models/magad.py:324
+msgid "Categories of Interest"
+msgstr ""
+
+#: magad/models/magad.py:326
+msgid "priority level"
+msgstr ""
+
+#: magad/models/magad.py:330
+msgid "Indicates which campaign is the most important to distribution system"
+msgstr ""
+
+#: magad/models/magad.py:376
+msgid "From which channel came this relation."
+msgstr ""
+
+#: magad/models/magad.py:377 magcore/accounts/models.py:44
+#: magcore/app/models.py:17 magcore/app/models.py:42
+#: magcore/company/models.py:28 magcore/configuration/models.py:11
+#: magcore/configuration/models.py:27 magcore/configuration/models.py:45
+#: magcore/publisher/models.py:15 magcore/publisher/models.py:39
+#: magcore/publisher/models.py:59 magcore/publisher/models.py:115
+#: magcore/publisher/models.py:137 magcore/publisher/models.py:162
+msgid "active"
+msgstr "Ativo"
+
+#: magad/models/magad.py:378
+msgid "refused"
+msgstr "Opt-out"
+
+#: magad/models/magad.py:379
+msgid "refusal reason"
+msgstr "Motivo"
+
+#: magad/models/magad.py:380
+msgid "notification date"
+msgstr "Data da notificação"
+
+#: magad/models/magad.py:382
+msgid "creation date"
+msgstr "Data de criação"
+
+#: magad/models/magad.py:383
+msgid "update date"
+msgstr "Data de atualização"
+
+#: magad/models/magad.py:441 magad/models/magad.py:494
+msgid "AdInsertion UUID"
+msgstr ""
+
+#: magad/models/magad.py:444
+msgid "Which campaign this insertion belongs"
+msgstr ""
+
+#: magad/models/magad.py:447
+msgid "The screen that was inserted"
+msgstr ""
+
+#: magad/models/magad.py:449
+msgid "The issue in which was inserted"
+msgstr ""
+
+#: magad/models/magad.py:451
+msgid "Page number"
+msgstr ""
+
+#: magad/models/magad.py:452
+msgid "The page of the insertion"
+msgstr ""
+
+#: magad/models/magad.py:453
+msgid "device which was an inserted"
+msgstr ""
+
+#: magad/models/magad.py:454
+msgid "Inserted"
+msgstr ""
+
+#: magad/models/magad.py:455
+msgid "Indicates if the request was inserted"
+msgstr ""
+
+#: magad/models/magad.py:496
+msgid "View time"
+msgstr "Tempo de visualização"
+
+#: magad/models/magad.py:496
+msgid "Total of time visualization"
+msgstr "Tempo total de visualização"
+
+#: magad/models/magad.py:505
+msgid "SDK Version"
+msgstr ""
+
+#: magad/reports/forms.py:11 magcore/publisher/models.py:82
+#: magcore/templates/base.html:28 magcore/templates/base_old.html:39
+msgid "Publishers"
+msgstr "Editoras"
+
+#: magad/reports/forms.py:17 magad/templates/campaign_create.html:37
+#: magcore/publisher/models.py:122 magcore/templates/base.html:29
+#: magcore/templates/base_old.html:40
+msgid "Publications"
+msgstr "Publicações"
+
+#: magad/reports/forms.py:23 magcore/publisher/models.py:46
+msgid "Channels"
+msgstr "Canais"
+
+#: magad/reports/forms.py:28
+msgid "Start at"
+msgstr ""
+
+#: magad/reports/forms.py:30
+msgid "End at"
+msgstr ""
+
+#: magad/templates/advertisement_create.html:16
+msgid "Ad Screens"
+msgstr ""
+
+#: magad/templates/advertisement_create.html:24
+#: magad/templates/advertisement_create.html:67
+msgid "package"
+msgstr ""
+
+#: magad/templates/advertisement_create.html:25
+#: magad/templates/advertisement_create.html:68
+msgid "Compatible sdks"
+msgstr "SDK's compatíves"
+
+#: magad/templates/advertisement_create.html:26
+#: magad/templates/advertisement_create.html:69
+msgid "Compatible device groups"
+msgstr ""
+
+#: magad/templates/advertisement_create.html:27
+#: magad/templates/advertisement_create.html:70
+msgid "Remove"
+msgstr "Excluir"
+
+#: magad/templates/advertisement_create.html:107
+msgid "Add another"
+msgstr ""
+
+#: magad/templates/advertisement_list.html:9
+msgid "Contract number"
+msgstr "PI"
+
+#: magad/templates/advertisement_list.html:11
+#: magcore/publisher/templates/publication_list.html:8
+#: magcore/publisher/templates/publication_list.html:22
+#: magcore/templates/base.html:27 magcore/templates/base_old.html:38
+msgid "Campaigns"
+msgstr "Campanhas"
+
+#: magad/templates/advertisement_list.html:12
+#: magad/templates/advertiser_list.html:12 magad/templates/agency_list.html:12
+#: magcore/accounts/templates/user_list.html:8
+#: magcore/publisher/templates/publication_list.html:10
+#: magcore/publisher/templates/publisher_list.html:11
+msgid "Edit"
+msgstr "Editar"
+
+#: magad/templates/advertisement_list.html:24
+msgid "campaigns"
+msgstr "campanhas"
+
+#: magad/templates/advertisement_list.html:27
+#: magad/templates/agency_list.html:28 magad/templates/campaign_list.html:14
+#: magcore/accounts/templates/user_list.html:20
+#: magcore/publisher/templates/publication_list.html:26
+#: magcore/publisher/templates/publisher_list.html:28
+#: magcore/templates/base.html:42 magcore/templates/base_old.html:46
+msgid "edit"
+msgstr "Editar"
+
+#: magad/templates/advertiser_list.html:7 magad/templates/agency_list.html:7
+#: magcore/publisher/templates/publisher_list.html:6
+msgid "Tax id"
+msgstr "CNPJ"
+
+#: magad/templates/advertiser_list.html:8 magad/templates/agency_list.html:8
+#: magcore/company/models.py:26
+#: magcore/publisher/templates/publisher_list.html:7
+msgid "Phone"
+msgstr "Telefone"
+
+#: magad/templates/advertiser_list.html:9 magad/templates/agency_list.html:9
+#: magcore/accounts/templates/user_list.html:7
+#: magcore/publisher/templates/publication_list.html:7
+#: magcore/publisher/templates/publisher_list.html:8
+msgid "Active"
+msgstr "Ativo"
+
+#: magad/templates/advertiser_list.html:10 magad/templates/agency_list.html:10
+#: magad/templates/agency_list.html:24
+#: magcore/publisher/templates/publisher_list.html:9
+#: magcore/publisher/templates/publisher_list.html:24
+msgid "Users"
+msgstr "Usuários"
+
+#: magad/templates/campaign_create.html:43
+#: magad/templates/campaign_create.html:50
+#: magad/templates/campaign_create.html:57
+msgid "All"
+msgstr "Todos"
+
+#: magad/templates/campaign_create.html:43
+#: magad/templates/campaign_create.html:50
+#: magad/templates/campaign_create.html:57
+msgid "No"
+msgstr "Não"
+
+#: magad/templates/campaign_create.html:65
+msgid "Devices"
+msgstr "Dispositivos"
+
+#: magad/templates/campaign_create.html:92
+msgid "Regions"
+msgstr "Estados"
+
+#: magad/templates/campaign_create.html:154
+#: magcore/accounts/templates/user_create.html:26
+#: magcore/accounts/templates/user_first_access.html:10
+#: magcore/accounts/templates/user_update.html:23
+#: magcore/templates/base_create.html:32
+msgid "save"
+msgstr "Salvar"
+
+#: magad/templates/campaign_create.html:257
+msgid "Select an advertisement"
+msgstr "Selecione um anunciante"
+
+#: magad/views.py:23
+msgid "Advertiser successfully saved."
+msgstr "Anunciante salvo com sucesso"
+
+#: magad/views.py:146
+msgid "User Advertiser"
+msgstr ""
+
+#: magad/views.py:154
+msgid "Agency successfully saved."
+msgstr "Agência salva com sucesso"
+
+#: magad/views.py:285
+msgid "User Agency"
+msgstr "Usuários da agência"
+
+#: magad/views.py:296
+msgid "Advertisement successfully saved."
+msgstr "Anúncio salvo com sucesso"
+
+#: magad/views.py:324 magad/views.py:335 magad/views.py:384
+msgid "Advertisement"
+msgstr "Anúncio"
+
+#: magad/views.py:392
+msgid "Campaign successfully saved."
+msgstr "Campanha salva com sucesso"
+
+#: magad/views.py:409 magad/views.py:486
+msgid "Campaign"
+msgstr "Campanha"
+
+#: magcore/accounts/admin.py:17
+msgid "Personal info"
+msgstr ""
+
+#: magcore/accounts/admin.py:18
+msgid "Permissions"
+msgstr "Permissões"
+
+#: magcore/accounts/admin.py:21
+msgid "Important dates"
+msgstr ""
+
+#: magcore/accounts/forms.py:11 magcore/accounts/forms.py:12
+#: magcore/accounts/forms.py:171 magcore/identify/models.py:12
+msgid "Email"
+msgstr ""
+
+#: magcore/accounts/forms.py:14 magcore/accounts/forms.py:15
+#: magcore/accounts/forms.py:176 magcore/accounts/forms.py:218
+msgid "Password"
+msgstr "Senha"
+
+#: magcore/accounts/forms.py:24
+msgid "Invalid Email."
+msgstr "Usuário não encontrado"
+
+#: magcore/accounts/forms.py:34
+msgid "Invalid password."
+msgstr "Senha incorreta"
+
+#: magcore/accounts/forms.py:46 magcore/publisher/models.py:81
+#: magcore/publisher/templates/publication_list.html:6
+#: magcore/publisher/views.py:62
+msgid "Publisher"
+msgstr "Editora"
+
+#: magcore/accounts/forms.py:56
+msgid "Old password"
+msgstr "Senha atual"
+
+#: magcore/accounts/forms.py:58 magcore/accounts/forms.py:133
+msgid "New password"
+msgstr "Nova senha"
+
+#: magcore/accounts/forms.py:60 magcore/accounts/forms.py:135
+msgid "New password again"
+msgstr "Repita nova senha"
+
+#: magcore/accounts/forms.py:83
+msgid "Insert your old password."
+msgstr "Insira sua senha atual"
+
+#: magcore/accounts/forms.py:89 magcore/accounts/forms.py:97
+msgid "Insert your new password."
+msgstr "Insira sua nova senha"
+
+#: magcore/accounts/forms.py:104 magcore/accounts/forms.py:158
+msgid "New password and New password is not equal."
+msgstr "Senhas não são iguais"
+
+#: magcore/accounts/forms.py:110
+msgid "Invalid old password."
+msgstr "Senha inválida"
+
+#: magcore/accounts/forms.py:115
+msgid "password"
+msgstr "senha"
+
+#: magcore/accounts/forms.py:127
+msgid "Invalid password"
+msgstr "Senha inválida"
+
+#: magcore/accounts/forms.py:154
+msgid "Insert your new password again."
+msgstr ""
+
+#: magcore/accounts/forms.py:168
+msgid "A user with that username already exists."
+msgstr ""
+
+#: magcore/accounts/forms.py:169
+msgid "The two password fields didn't match."
+msgstr ""
+
+#: magcore/accounts/forms.py:172
+msgid "Required."
+msgstr "Obrigatório"
+
+#: magcore/accounts/forms.py:174
+msgid "Insert a valid e-mail."
+msgstr "Preencha com um email válido"
+
+#: magcore/accounts/forms.py:178
+msgid "Password confirmation"
+msgstr "Confirmação de senha"
+
+#: magcore/accounts/forms.py:180
+msgid "Enter the same password as above, for verification."
+msgstr ""
+
+#: magcore/accounts/forms.py:219
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user's "
+"password, but you can change the password using <a href=\"password/\">this "
+"form</a>."
+msgstr ""
+
+#: magcore/accounts/models.py:38
+msgid "email address"
+msgstr "E-mail"
+
+#: magcore/accounts/models.py:39
+msgid "first name"
+msgstr "Nome"
+
+#: magcore/accounts/models.py:40
+msgid "last name"
+msgstr "Sobrenome"
+
+#: magcore/accounts/models.py:41
+msgid "staff status"
+msgstr ""
+
+#: magcore/accounts/models.py:42
+msgid "Designates whether the user can log into this admin site."
+msgstr ""
+
+#: magcore/accounts/models.py:45
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+
+#: magcore/accounts/models.py:47
+msgid "date joined"
+msgstr ""
+
+#: magcore/accounts/models.py:54
+msgid "user"
+msgstr ""
+
+#: magcore/accounts/models.py:55
+msgid "users"
+msgstr ""
+
+#: magcore/accounts/templates/login.html:24
+#: magcore/accounts/templates/password_reset/recovery_form.html:9
+msgid "Recover my password"
+msgstr "Recuperar minha senha"
+
+#: magcore/accounts/templates/password_reset/recovery_done.html:4
+msgid "New password set"
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/recovery_done.html:7
+msgid ""
+"Your password has successfully been reset. You can use it right now on the "
+"login page."
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/recovery_email.txt:2
+#, python-format
+msgid "Dear %(username)s,"
+msgstr "Prezado %(username)s,"
+
+#: magcore/accounts/templates/password_reset/recovery_email.txt:4
+#, python-format
+msgid ""
+"You -- or someone pretending to be you -- has requested a password reset on "
+"%(domain)s."
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/recovery_email.txt:6
+msgid "You can set your new password by following this link:"
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/recovery_email.txt:10
+msgid ""
+"If you don't want to reset your password, simply ignore this email and it "
+"will stay unchanged."
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/recovery_email_subject.txt:1
+#, python-format
+msgid "Password recovery on %(domain)s"
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/reset.html:7
+#, python-format
+msgid ""
+"Sorry, this password reset link is invalid. You can still <a href="
+"\"%(recovery_url)s\">request a new one</a>."
+msgstr ""
+
+#: magcore/accounts/templates/password_reset/reset.html:9
+#, python-format
+msgid "Hi, <strong>%(username)s</strong>. Please choose your new password."
+msgstr "Olá, <strong>%(username)s</strong>. Por favor preencha sua nova senha."
+
+#: magcore/accounts/templates/password_reset/reset.html:13
+msgid "Set new password"
+msgstr "Preencha com a nova senha"
+
+#: magcore/accounts/templates/password_reset/reset_sent.html:4
+msgid "Password recovery sent"
+msgstr "E-mail de recuperação de senha enviado"
+
+#: magcore/accounts/templates/password_reset/reset_sent.html:7
+#, python-format
+msgid ""
+"An email was sent to <strong>%(email)s</strong> %(ago)s ago. Use the link in "
+"it to set a new password."
+msgstr "Um email foi enviado para <strong>%(email)s</strong> %(ago)s. Use o link no corpo do email para "
+"escolher uma nova senha"
+
+
+#: magcore/accounts/templates/user_authenticate.html:20
+msgid "Generate"
+msgstr ""
+
+#: magcore/accounts/templates/user_create.html:24
+#: magcore/accounts/templates/user_update.html:21
+msgid "api key"
+msgstr ""
+
+#: magcore/accounts/templates/user_first_access.html:5
+msgid "First Access"
+msgstr "Primeiro acesso"
+
+#: magcore/accounts/templates/user_list.html:6
+msgid "email"
+msgstr ""
+
+#: magcore/accounts/views.py:42
+msgid "Login"
+msgstr ""
+
+#: magcore/accounts/views.py:86
+msgid "Token"
+msgstr ""
+
+#: magcore/accounts/views.py:93
+msgid "User Create"
+msgstr ""
+
+#: magcore/accounts/views.py:137
+msgid "Saved"
+msgstr "Salvo"
+
+#: magcore/accounts/views.py:146
+msgid "User update"
+msgstr ""
+
+#: magcore/accounts/views.py:199
+msgid "User Publisher"
+msgstr ""
+
+#: magcore/accounts/views.py:222
+msgid "Invalid url."
+msgstr "Url inválida"
+
+#: magcore/app/models.py:15
+msgid "devices"
+msgstr "dispositivos"
+
+#: magcore/app/models.py:16 magcore/app/models.py:41
+#: magcore/company/models.py:27 magcore/configuration/models.py:10
+#: magcore/configuration/models.py:26 magcore/configuration/models.py:44
+#: magcore/publisher/models.py:14 magcore/publisher/models.py:38
+#: magcore/publisher/models.py:58 magcore/publisher/models.py:114
+#: magcore/publisher/models.py:136 magcore/publisher/models.py:161
+msgid "Created"
+msgstr "Criado"
+
+#: magcore/app/models.py:23
+msgid "App"
+msgstr ""
+
+#: magcore/app/models.py:24
+msgid "Apps"
+msgstr ""
+
+#: magcore/app/models.py:38
+msgid "Vendor Identifier."
+msgstr ""
+
+#: magcore/app/models.py:40
+msgid "UUID that uniquely identifies a device to the apps vendor."
+msgstr ""
+
+#: magcore/app/models.py:43
+msgid "Ominture visitor id of Adobe DPS"
+msgstr ""
+
+#: magcore/app/models.py:52
+msgid "DeviceApp"
+msgstr ""
+
+#: magcore/app/models.py:53
+msgid "DeviceApps"
+msgstr ""
+
+#: magcore/common/api/serializers.py:13
+msgid "This must be in UUID format."
+msgstr ""
+
+#: magcore/common/emails.py:11
+msgid "New User"
+msgstr "Novo usuário"
+
+#: magcore/company/forms.py:17
+msgid "Formato deve ser XX.XXX.XXX/XXXX-XX"
+"Input can either be of the format XX.XXX.XXX/XXXX-XX or be a group of 14 "
+"digits."
+msgstr ""
+
+#: magcore/company/forms.py:20
+msgid "Brazilian zip code, with the format XXXXX-XXX."
+msgstr "CEP"
+
+#: magcore/company/models.py:14
+msgid "Legal Name"
+msgstr ""
+
+#: magcore/company/models.py:15
+msgid "Trade Name"
+msgstr ""
+
+#: magcore/company/models.py:16
+msgid "Tax ID"
+msgstr ""
+
+#: magcore/company/models.py:17
+msgid "Tax ID format varies in each country. In Brazil it is the CNPJ."
+msgstr ""
+
+#: magcore/company/models.py:19
+msgid "The city where this company is based."
+msgstr ""
+
+#: magcore/company/models.py:19
+msgid "City"
+msgstr "Cidade"
+
+#: magcore/company/models.py:20
+msgid "Zip Code"
+msgstr "CEP"
+
+#: magcore/company/models.py:21
+msgid "Zip Code varies in each country. In Brazil this is know as CEP."
+msgstr "CEP"
+
+#: magcore/company/models.py:22
+msgid "Address"
+msgstr "Endereço"
+
+#: magcore/company/models.py:23
+msgid "Street"
+msgstr "Rua"
+
+#: magcore/company/models.py:24
+msgid "Number"
+msgstr "Número"
+
+#: magcore/company/models.py:25
+msgid "Complement"
+msgstr "Complemento"
+
+#: magcore/configuration/models.py:9
+msgid "url"
+msgstr ""
+
+#: magcore/configuration/models.py:17
+msgid "Api url"
+msgstr ""
+
+#: magcore/configuration/models.py:18
+msgid "Api urls"
+msgstr ""
+
+#: magcore/configuration/models.py:23
+msgid "Tracking name"
+msgstr ""
+
+#: magcore/configuration/models.py:24
+msgid "Code"
+msgstr "Valor"
+
+#: magcore/configuration/models.py:25
+msgid "Insert a valid code."
+msgstr "Insira um código válido"
+
+#: magcore/configuration/models.py:33
+msgid "GA tracking"
+msgstr ""
+
+#: magcore/configuration/models.py:34
+msgid "GA Trackings"
+msgstr ""
+
+#: magcore/configuration/models.py:40
+msgid "Configuration name"
+msgstr ""
+
+#: magcore/configuration/models.py:51 magcore/configuration/models.py:52
+msgid "Configuration"
+msgstr ""
+
+#: magcore/device/models.py:12
+msgid "The name of the operating system running on the device"
+msgstr ""
+
+#: magcore/device/models.py:23
+msgid "Version"
+msgstr ""
+
+#: magcore/device/models.py:24
+msgid "A version of an System."
+msgstr ""
+
+#: magcore/device/models.py:36
+msgid "The system of a device."
+msgstr ""
+
+#: magcore/device/models.py:40
+msgid "The current version of the operating system installed in a device"
+msgstr ""
+
+#: magcore/device/models.py:57
+msgid "Screen Layout Size"
+msgstr ""
+
+#: magcore/device/models.py:58
+msgid "Screens Layout Size"
+msgstr ""
+
+#: magcore/device/models.py:66
+msgid "The model of the device"
+msgstr ""
+
+#: magcore/device/models.py:70
+msgid "Screen Width"
+msgstr ""
+
+#: magcore/device/models.py:71
+msgid "The width of the screen of the device model."
+msgstr ""
+
+#: magcore/device/models.py:75
+msgid "screen Height"
+msgstr ""
+
+#: magcore/device/models.py:76
+msgid "The height of the screen of the device model."
+msgstr ""
+
+#: magcore/device/models.py:80
+msgid "Screen Inches"
+msgstr ""
+
+#: magcore/device/models.py:81
+msgid "The inches of the screen of the device model."
+msgstr ""
+
+#: magcore/device/models.py:85
+msgid "Screen Density"
+msgstr ""
+
+#: magcore/device/models.py:86
+msgid "The density in dpi of the screen of the device model."
+msgstr ""
+
+#: magcore/device/models.py:161
+msgid "Device UUID"
+msgstr ""
+
+#: magcore/device/models.py:164
+msgid "Advertising Identifier"
+msgstr "ID Advertisign"
+
+#: magcore/device/models.py:165
+msgid "UUID which identifies a device for target advertisement."
+msgstr "UUID que identifica o id_advertisign"
+
+#: magcore/device/models.py:170
+msgid "System ID"
+msgstr ""
+
+#: magcore/device/models.py:171
+msgid ""
+"The Operating System may create an identifier for the installation, like "
+"Android_ID."
+msgstr ""
+
+#: magcore/device/models.py:175
+msgid "Serial Number"
+msgstr ""
+
+#: magcore/device/models.py:181
+msgid "Device name given by the user"
+msgstr "Nome do device dado pelo usuário"
+
+#: magcore/device/models.py:184
+msgid "The Current Operating System installed."
+msgstr "System Operacional"
+
+#: magcore/device/models.py:187
+msgid "Date and time of device creation."
+msgstr "Date e hora da criação do device"
+
+#: magcore/device/models.py:189
+msgid "Date and time of device last update."
+msgstr "Data e hora do ultimo update"
+
+#: magcore/device/models.py:193
+msgid "Related Emails"
+msgstr "Emails relacionados"
+
+#: magcore/device/models.py:194
+msgid "Emails somewhat related to device."
+msgstr ""
+
+#: magcore/device/models.py:208
+msgid "Name of the group."
+msgstr "Nome do grupo"
+
+#: magcore/device/models.py:210
+msgid "Devices in this group."
+msgstr "Devices no grupo"
+
+#: magcore/identify/models.py:12
+msgid "A email"
+msgstr "Email"
+
+#: magcore/log/models.py:27 magcore/log/models.py:49
+msgid "action time"
+msgstr ""
+
+#: magcore/log/models.py:30
+msgid "object id"
+msgstr ""
+
+#: magcore/log/models.py:31
+msgid "object repr"
+msgstr ""
+
+#: magcore/log/models.py:33
+msgid "changed message"
+msgstr ""
+
+#: magcore/log/models.py:40
+msgid "user agent"
+msgstr ""
+
+#: magcore/log/models.py:51
+msgid "client ip"
+msgstr "Ip do cliente"
+
+#: magcore/log/models.py:52
+msgid "The IP at the time of log"
+msgstr "IP no momento do log"
+
+#: magcore/log/models.py:72
+msgid "The device app which this geo belongs"
+msgstr ""
+
+#: magcore/log/models.py:76
+msgid "The system present in the device at the time of log"
+msgstr ""
+
+#: magcore/log/models.py:79
+msgid "coordinate"
+msgstr ""
+
+#: magcore/log/models.py:79
+msgid "String in WKT EWKT, or HEXEWKB formats"
+msgstr ""
+
+#: magcore/log/models.py:83
+msgid "Log Resource"
+msgstr ""
+
+#: magcore/log/models.py:92
+msgid "Device Log"
+msgstr "Log do Device"
+
+#: magcore/log/models.py:93
+msgid "Devices Log"
+msgstr "Log dos Devices"
+
+#: magcore/log/models.py:105
+msgid "Log"
+msgstr ""
+
+#: magcore/log/models.py:108
+msgid "Log JS"
+msgstr ""
+
+#: magcore/log/models.py:109
+msgid "Logs JS"
+msgstr ""
+
+#: magcore/publisher/models.py:12 magcore/publisher/models.py:32
+#: magcore/publisher/models.py:112 magcore/publisher/models.py:134
+msgid "name"
+msgstr "Nome"
+
+#: magcore/publisher/models.py:13 magcore/publisher/models.py:33
+msgid "slug"
+msgstr "Slug"
+
+#: magcore/publisher/models.py:21
+msgid "Category"
+msgstr "Categoria"
+
+#: magcore/publisher/models.py:37
+msgid "interest category"
+msgstr "Categoria"
+
+#: magcore/publisher/models.py:45
+msgid "Channel"
+msgstr "Canal"
+
+#: magcore/publisher/models.py:65
+msgid "Interest Channel and Category"
+msgstr "Canal de Interesse e Categoria"
+
+#: magcore/publisher/models.py:66
+msgid "Interest Channels and Categories"
+msgstr "Canais de Interesses e Categorias"
+
+#: magcore/publisher/models.py:93
+msgid "Slug"
+msgstr ""
+
+#: magcore/publisher/models.py:96 magcore/publisher/models.py:97
+msgid "Developer"
+msgstr "Desenvolvedor"
+
+#: magcore/publisher/models.py:121 magcore/publisher/views.py:81
+msgid "Publication"
+msgstr "Publicação"
+
+#: magcore/publisher/models.py:135
+msgid "identifier"
+msgstr "identificador"
+
+#: magcore/publisher/models.py:138
+msgid "cover"
+msgstr "capa"
+
+#: magcore/publisher/models.py:139
+msgid "total pages"
+msgstr "total de páginas"
+
+#: magcore/publisher/models.py:140
+msgid "black list"
+msgstr ""
+
+#: magcore/publisher/models.py:141
+msgid "Use \",\" to separate page numbers."
+msgstr "Use \",\" para separar as páginas"
+
+#: magcore/publisher/models.py:147
+msgid "Issue"
+msgstr "Edição"
+
+#: magcore/publisher/models.py:148
+msgid "Issues"
+msgstr "Edições"
+
+#: magcore/publisher/models.py:160
+msgid "number"
+msgstr "número"
+
+#: magcore/publisher/models.py:168
+msgid "Page"
+msgstr "Página"
+
+#: magcore/publisher/models.py:169
+msgid "Pages"
+msgstr "Páginas"
+
+#: magcore/publisher/views.py:15
+msgid "Publisher successfully saved."
+msgstr "Editora salva com sucesso"
+
+#: magcore/publisher/views.py:71
+msgid "Publication successfully saved."
+msgstr "Publicação salva com sucesso"
+
+#: magcore/templates/base.html:24 magcore/templates/base_old.html:35
+msgid "Advertisers"
+msgstr "Anunciantes"
+
+#: magcore/templates/base.html:26 magcore/templates/base_old.html:37
+msgid "Advertisements"
+msgstr "Anúncios"
+
+#: magcore/templates/base.html:40
+msgid "LOGOUT"
+msgstr "SAIR"
+
+#: magcore/templates/base.html:43 magcore/templates/base_old.html:47
+msgid "logout"
+msgstr "Sair"
+
+#: magcore/templates/base_list.html:7
+msgid "search field"
+msgstr "Buscar"
+
+#: magcore/templates/base_list.html:16
+msgid "New"
+msgstr "Novo"
+
+#: magcore/templates/base_old.html:33
+msgid "Menu"
+msgstr ""
+
+#: magcore/templates/base_old.html:44
+msgid "Profile"
+msgstr "Perfil"
+
+#: magdevel/settings.py:303
+msgid "Brazil"
+msgstr "Brasil"
+
+#~ msgid "floor"
+#~ msgstr "andar"
+
+#~ msgid "document"
+#~ msgstr "Anexo do contrato"

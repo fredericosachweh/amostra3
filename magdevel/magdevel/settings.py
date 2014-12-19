@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 import socket
 import mongoengine
-
+from django.utils.translation import ugettext_lazy as _
 
 HOST_NAME = socket.gethostbyname(socket.gethostname())
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -89,6 +89,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -294,6 +295,19 @@ FILE_UPLOAD_HANDLERS = (
 )
 
 GEOIP_PATH = '/usr/share/GeoIP'
+
+
+LANGUAGE_CODE = 'pt_BR'
+USE_L10N = True
+USE_I18N = True
+LANGUAGES = [
+    ('pt_BR', _('Brazil'))
+]
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+
 
 try:
     from magdevel.local_settings import *
