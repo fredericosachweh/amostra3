@@ -193,6 +193,7 @@ BOWER_INSTALLED_APPS = (
     'kalendae#0.4.1',
     'jquery-maskedinput#1.4.0',
     'font-awesome#4.2.0',
+    'highcharts-release',
 )
 
 COMPRESS_PRECOMPILERS = (
