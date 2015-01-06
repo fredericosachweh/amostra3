@@ -9,7 +9,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^', include('magcore.accounts.urls', namespace='accounts')),
+    url(r'^', include('magcore.accounts.urls')),
     #url(r'^', TemplateView.as_view(template_name="base.html")),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^configuration/', include('magcore.configuration.urls')),
