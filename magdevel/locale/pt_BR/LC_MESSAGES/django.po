@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-19 15:54+0000\n"
+"POT-Creation-Date: 2015-01-06 16:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,15 +41,29 @@ msgstr "Insira o valor sem \".\""
 msgid "Campaign is in progress and can not be edited."
 msgstr "Campanha está em andamento e não pode ser editada"
 
-#: magad/models/magad.py:92
+#: magad/models/magad.py:84 magad/models/magad.py:96
+msgid "Logo"
+msgstr ""
+
+#: magad/models/magad.py:86
+#, fuzzy
+#| msgid "Advertiser"
+msgid "The logo of Advertiser"
+msgstr "Anunciantes"
+
+#: magad/models/magad.py:95
 msgid "Advertisers who are clients of this agency"
 msgstr "Anunciantes que são clientes desta agência"
 
-#: magad/models/magad.py:95
+#: magad/models/magad.py:98
+msgid "The logo of Agency"
+msgstr ""
+
+#: magad/models/magad.py:100
 msgid "Agencies"
 msgstr "Agencias"
 
-#: magad/models/magad.py:112 magad/templates/advertisement_list.html:6
+#: magad/models/magad.py:117 magad/templates/advertisement_list.html:6
 #: magad/templates/advertiser_list.html:6 magad/templates/agency_list.html:6
 #: magcore/accounts/templates/user_list.html:5
 #: magcore/configuration/models.py:8 magcore/configuration/models.py:22
@@ -63,209 +77,209 @@ msgstr "Agencias"
 msgid "Name"
 msgstr "Nome"
 
-#: magad/models/magad.py:112
+#: magad/models/magad.py:117
 msgid "The name for this advertisement."
 msgstr "Nome do anunciante"
 
-#: magad/models/magad.py:114
+#: magad/models/magad.py:119
 msgid "The Agency responsible for this advertisement."
 msgstr "Agência responsável pelo anúncio"
 
-#: magad/models/magad.py:116
+#: magad/models/magad.py:121
 msgid "The advertiser of this advertisement."
 msgstr "Anunciante do anúncio"
 
-#: magad/models/magad.py:117
+#: magad/models/magad.py:122
 msgid "contract number"
 msgstr "PI"
 
-#: magad/models/magad.py:118
+#: magad/models/magad.py:123
 msgid "Value of contract"
 msgstr "Valor do PI"
 
-#: magad/models/magad.py:119 magad/models/magad.py:285
+#: magad/models/magad.py:124 magad/models/magad.py:290
 msgid "Planned Insertions"
 msgstr "Insercões planejadas"
 
-#: magad/models/magad.py:120 magad/models/magad.py:286
+#: magad/models/magad.py:125 magad/models/magad.py:291
 msgid "Total number of insertions planned"
 msgstr "Quantida de inserções planejadas"
 
-#: magad/models/magad.py:121
+#: magad/models/magad.py:126
 #, fuzzy
 #| msgid "Value of contract"
 msgid "Attachement of contract"
 msgstr "Anexo do PI"
 
-#: magad/models/magad.py:122 magad/models/magad.py:141
-#: magad/models/magad.py:189 magad/models/magad.py:332
-#: magad/models/magad.py:456 magad/models/magad.py:498
+#: magad/models/magad.py:127 magad/models/magad.py:146
+#: magad/models/magad.py:194 magad/models/magad.py:337
+#: magad/models/magad.py:461 magad/models/magad.py:503
 #: magad/templates/advertisement_list.html:10 magcore/log/models.py:103
 msgid "Created at"
 msgstr "Criado em"
 
-#: magad/models/magad.py:124 magad/models/magad.py:191
-#: magad/models/magad.py:334 magad/models/magad.py:458
+#: magad/models/magad.py:129 magad/models/magad.py:196
+#: magad/models/magad.py:339 magad/models/magad.py:463
 msgid "Updated at"
 msgstr "Alterado em"
 
-#: magad/models/magad.py:138
+#: magad/models/magad.py:143
 msgid "SDK version."
 msgstr "Versão do SDK"
 
-#: magad/models/magad.py:139
+#: magad/models/magad.py:144
 msgid "Repository URL"
 msgstr "Url do repósitorio"
 
-#: magad/models/magad.py:140
+#: magad/models/magad.py:145
 msgid "URL of the repository for this SDK version"
 msgstr "Url do reposiorio para esta versão do SDK"
 
-#: magad/models/magad.py:177
+#: magad/models/magad.py:182
 msgid "The advertisement that this screen belongs"
 msgstr "Anúncio que esta tela pertence"
 
-#: magad/models/magad.py:181
+#: magad/models/magad.py:186
 msgid "All compatibles SDKs"
 msgstr "Todos os SDK's compatíveis"
 
-#: magad/models/magad.py:183
+#: magad/models/magad.py:188
 msgid "Screenshoot"
 msgstr ""
 
-#: magad/models/magad.py:186
+#: magad/models/magad.py:191
 msgid "The screenshoot of adscreen"
 msgstr "Screenshot da Tela"
 
-#: magad/models/magad.py:259
+#: magad/models/magad.py:264
 msgid "Urgent"
 msgstr "Urgente"
 
-#: magad/models/magad.py:260
+#: magad/models/magad.py:265
 msgid "High"
 msgstr "Alto"
 
-#: magad/models/magad.py:261
+#: magad/models/magad.py:266
 msgid "Default"
 msgstr ""
 
-#: magad/models/magad.py:262
+#: magad/models/magad.py:267
 msgid "Low"
 msgstr "Baixo"
 
-#: magad/models/magad.py:263
+#: magad/models/magad.py:268
 msgid "Very low"
 msgstr "Muito Baixo"
 
-#: magad/models/magad.py:267
+#: magad/models/magad.py:272
 msgid "Waiting start"
 msgstr "Aguardando início"
 
-#: magad/models/magad.py:277
+#: magad/models/magad.py:282
 msgid "Campaign Name"
 msgstr "Nome da campanha"
 
-#: magad/models/magad.py:279
+#: magad/models/magad.py:284
 msgid "Description"
 msgstr "Descriçaõ"
 
-#: magad/models/magad.py:280
+#: magad/models/magad.py:285
 msgid "Brief description of the campaign, it will be seen by users"
 msgstr "Breve descrição da campanha, será exibida aos editores"
 
-#: magad/models/magad.py:281
+#: magad/models/magad.py:286
 msgid "Observations"
 msgstr "Observações"
 
-#: magad/models/magad.py:282
+#: magad/models/magad.py:287
 msgid "Internal observations"
 msgstr "Observações da ADMAG"
 
-#: magad/models/magad.py:284
+#: magad/models/magad.py:289
 msgid "The advertisement which this campaign will distribute"
 msgstr "Anunciante"
 
-#: magad/models/magad.py:287
+#: magad/models/magad.py:292
 msgid "value"
 msgstr "Valor do PI"
 
-#: magad/models/magad.py:289
+#: magad/models/magad.py:294
 msgid "already inserted"
 msgstr "Quantidade de inserções"
 
-#: magad/models/magad.py:290
+#: magad/models/magad.py:295
 msgid "how much has already inserted"
 msgstr "Quantas inserções foram feitas"
 
-#: magad/models/magad.py:291
+#: magad/models/magad.py:296
 msgid "deliverability"
 msgstr "Prioridade"
 
-#: magad/models/magad.py:292
+#: magad/models/magad.py:297
 msgid "The higher the value the higher the delivery priority for this campaign"
 msgstr "Quanto mais alta a prioridade, mais inserções terá esta campanha"
 
-#: magad/models/magad.py:296
+#: magad/models/magad.py:301
 msgid "Starts at"
 msgstr "Início"
 
-#: magad/models/magad.py:297
+#: magad/models/magad.py:302
 msgid "When the distribution starts"
 msgstr "Data de início da distribuição"
 
-#: magad/models/magad.py:298
+#: magad/models/magad.py:303
 msgid "Ends at"
 msgstr "Finaliza em"
 
-#: magad/models/magad.py:299
+#: magad/models/magad.py:304
 msgid "When the distribution ends"
 msgstr "Finaliza em"
 
-#: magad/models/magad.py:300
+#: magad/models/magad.py:305
 msgid "Daily start at"
 msgstr "Início diário"
 
-#: magad/models/magad.py:301
+#: magad/models/magad.py:306
 msgid "Which time of day distribution starts"
 msgstr ""
 
-#: magad/models/magad.py:304
+#: magad/models/magad.py:309
 msgid "Where advertisement country will be delivered."
 msgstr ""
 
-#: magad/models/magad.py:308
+#: magad/models/magad.py:313
 msgid "Where advertisement region will be delivered."
 msgstr ""
 
-#: magad/models/magad.py:312
+#: magad/models/magad.py:317
 msgid "Where advertisement city will be delivered."
 msgstr ""
 
-#: magad/models/magad.py:316
+#: magad/models/magad.py:321
 msgid "Where advertisement device system will be delivered."
 msgstr ""
 
-#: magad/models/magad.py:320
+#: magad/models/magad.py:325
 msgid "Where advertisement device model will be delivered."
 msgstr ""
 
-#: magad/models/magad.py:324
+#: magad/models/magad.py:329
 msgid "Categories of Interest"
 msgstr ""
 
-#: magad/models/magad.py:326
+#: magad/models/magad.py:331
 msgid "priority level"
 msgstr ""
 
-#: magad/models/magad.py:330
+#: magad/models/magad.py:335
 msgid "Indicates which campaign is the most important to distribution system"
 msgstr ""
 
-#: magad/models/magad.py:376
+#: magad/models/magad.py:381
 msgid "From which channel came this relation."
 msgstr ""
 
-#: magad/models/magad.py:377 magcore/accounts/models.py:44
+#: magad/models/magad.py:382 magcore/accounts/models.py:44
 #: magcore/app/models.py:17 magcore/app/models.py:42
 #: magcore/company/models.py:28 magcore/configuration/models.py:11
 #: magcore/configuration/models.py:27 magcore/configuration/models.py:45
@@ -275,95 +289,159 @@ msgstr ""
 msgid "active"
 msgstr "Ativo"
 
-#: magad/models/magad.py:378
+#: magad/models/magad.py:383
 msgid "refused"
 msgstr "Opt-out"
 
-#: magad/models/magad.py:379
+#: magad/models/magad.py:384
 msgid "refusal reason"
 msgstr "Motivo"
 
-#: magad/models/magad.py:380
+#: magad/models/magad.py:385
 msgid "notification date"
 msgstr "Data da notificação"
 
-#: magad/models/magad.py:382
+#: magad/models/magad.py:387
 msgid "creation date"
 msgstr "Data de criação"
 
-#: magad/models/magad.py:383
+#: magad/models/magad.py:388
 msgid "update date"
 msgstr "Data de atualização"
 
-#: magad/models/magad.py:441 magad/models/magad.py:494
+#: magad/models/magad.py:446 magad/models/magad.py:499
 msgid "AdInsertion UUID"
 msgstr ""
 
-#: magad/models/magad.py:444
+#: magad/models/magad.py:449
 msgid "Which campaign this insertion belongs"
 msgstr ""
 
-#: magad/models/magad.py:447
+#: magad/models/magad.py:452
 msgid "The screen that was inserted"
 msgstr ""
 
-#: magad/models/magad.py:449
+#: magad/models/magad.py:454
 msgid "The issue in which was inserted"
 msgstr ""
 
-#: magad/models/magad.py:451
+#: magad/models/magad.py:456
 msgid "Page number"
 msgstr ""
 
-#: magad/models/magad.py:452
+#: magad/models/magad.py:457
 msgid "The page of the insertion"
 msgstr ""
 
-#: magad/models/magad.py:453
+#: magad/models/magad.py:458
 msgid "device which was an inserted"
 msgstr ""
 
-#: magad/models/magad.py:454
+#: magad/models/magad.py:459
 msgid "Inserted"
 msgstr ""
 
-#: magad/models/magad.py:455
+#: magad/models/magad.py:460
 msgid "Indicates if the request was inserted"
 msgstr ""
 
-#: magad/models/magad.py:496
+#: magad/models/magad.py:501
 msgid "View time"
 msgstr "Tempo de visualização"
 
-#: magad/models/magad.py:496
+#: magad/models/magad.py:501
 msgid "Total of time visualization"
 msgstr "Tempo total de visualização"
 
-#: magad/models/magad.py:505
+#: magad/models/magad.py:510
 msgid "SDK Version"
 msgstr ""
 
-#: magad/reports/forms.py:11 magcore/publisher/models.py:82
+#: magad/reports/forms.py:12 magcore/templates/base.html:26
+#: magcore/templates/base_old.html:37
+msgid "Advertisements"
+msgstr "Anúncios"
+
+#: magad/reports/forms.py:18 magad/templates/advertisement_list.html:11
+#: magcore/publisher/templates/publication_list.html:8
+#: magcore/publisher/templates/publication_list.html:22
+#: magcore/templates/base.html:27 magcore/templates/base_old.html:38
+msgid "Campaigns"
+msgstr "Campanhas"
+
+#: magad/reports/forms.py:24
+#: magad/reports/templates/report_advertisement_channel.html:54
+#: magcore/publisher/models.py:46
+msgid "Channels"
+msgstr "Canais"
+
+#: magad/reports/forms.py:30 magcore/publisher/models.py:82
 #: magcore/templates/base.html:28 magcore/templates/base_old.html:39
 msgid "Publishers"
 msgstr "Editoras"
 
-#: magad/reports/forms.py:17 magad/templates/campaign_create.html:37
+#: magad/reports/forms.py:36 magad/templates/campaign_create.html:37
 #: magcore/publisher/models.py:122 magcore/templates/base.html:29
 #: magcore/templates/base_old.html:40
 msgid "Publications"
 msgstr "Publicações"
 
-#: magad/reports/forms.py:23 magcore/publisher/models.py:46
-msgid "Channels"
-msgstr "Canais"
+#: magad/reports/forms.py:42 magcore/publisher/models.py:148
+msgid "Issues"
+msgstr "Edições"
 
-#: magad/reports/forms.py:28
+#: magad/reports/forms.py:47
 msgid "Start at"
 msgstr ""
 
-#: magad/reports/forms.py:30
+#: magad/reports/forms.py:49
 msgid "End at"
+msgstr ""
+
+#: magad/reports/templates/report_advertisement_channel.html:9
+#, fuzzy
+#| msgid "Planned Insertions"
+msgid "Channel Adsertions"
+msgstr "Insercões planejadas"
+
+#: magad/reports/templates/report_advertisement_device.html:16
+msgid "Total Embarques por dispositivo"
+msgstr ""
+
+#: magad/reports/templates/report_advertisement_form.html:7
+#: magad/reports/templates/report_advertisement_form.html:14
+#: magad/reports/templates/report_advertisement_form.html:21
+#: magad/reports/templates/report_advertisement_form.html:28
+#: magad/reports/templates/report_advertisement_form.html:35
+#: magad/reports/templates/report_advertisement_form.html:42
+#: magad/templates/campaign_create.html:43
+#: magad/templates/campaign_create.html:50
+#: magad/templates/campaign_create.html:57
+msgid "All"
+msgstr "Todos"
+
+#: magad/reports/templates/report_advertisement_form.html:7
+#: magad/reports/templates/report_advertisement_form.html:14
+#: magad/reports/templates/report_advertisement_form.html:21
+#: magad/reports/templates/report_advertisement_form.html:28
+#: magad/reports/templates/report_advertisement_form.html:35
+#: magad/reports/templates/report_advertisement_form.html:42
+#: magad/templates/campaign_create.html:43
+#: magad/templates/campaign_create.html:50
+#: magad/templates/campaign_create.html:57
+msgid "No"
+msgstr "Não"
+
+#: magad/reports/templates/report_advertisement_hour.html:10
+msgid "Leituras diárias"
+msgstr ""
+
+#: magad/reports/templates/report_advertisement_hour.html:71
+msgid "Average time reader per minute"
+msgstr ""
+
+#: magad/reports/templates/report_advertisement_total.html:9
+msgid "Total Embarques por período"
 msgstr ""
 
 #: magad/templates/advertisement_create.html:16
@@ -397,13 +475,6 @@ msgstr ""
 #: magad/templates/advertisement_list.html:9
 msgid "Contract number"
 msgstr "PI"
-
-#: magad/templates/advertisement_list.html:11
-#: magcore/publisher/templates/publication_list.html:8
-#: magcore/publisher/templates/publication_list.html:22
-#: magcore/templates/base.html:27 magcore/templates/base_old.html:38
-msgid "Campaigns"
-msgstr "Campanhas"
 
 #: magad/templates/advertisement_list.html:12
 #: magad/templates/advertiser_list.html:12 magad/templates/agency_list.html:12
@@ -450,18 +521,6 @@ msgstr "Ativo"
 #: magcore/publisher/templates/publisher_list.html:24
 msgid "Users"
 msgstr "Usuários"
-
-#: magad/templates/campaign_create.html:43
-#: magad/templates/campaign_create.html:50
-#: magad/templates/campaign_create.html:57
-msgid "All"
-msgstr "Todos"
-
-#: magad/templates/campaign_create.html:43
-#: magad/templates/campaign_create.html:50
-#: magad/templates/campaign_create.html:57
-msgid "No"
-msgstr "Não"
 
 #: magad/templates/campaign_create.html:65
 msgid "Devices"
@@ -546,6 +605,7 @@ msgid "Invalid password."
 msgstr "Senha incorreta"
 
 #: magcore/accounts/forms.py:46 magcore/publisher/models.py:81
+#: magcore/publisher/models.py:110
 #: magcore/publisher/templates/publication_list.html:6
 #: magcore/publisher/views.py:62
 msgid "Publisher"
@@ -727,9 +787,9 @@ msgstr "E-mail de recuperação de senha enviado"
 msgid ""
 "An email was sent to <strong>%(email)s</strong> %(ago)s ago. Use the link in "
 "it to set a new password."
-msgstr "Um email foi enviado para <strong>%(email)s</strong> %(ago)s. Use o link no corpo do email para "
-"escolher uma nova senha"
-
+msgstr ""
+"Um email foi enviado para <strong>%(email)s</strong> %(ago)s. Use o link no "
+"corpo do email para escolher uma nova senha"
 
 #: magcore/accounts/templates/user_authenticate.html:20
 msgid "Generate"
@@ -826,7 +886,7 @@ msgid "New User"
 msgstr "Novo usuário"
 
 #: magcore/company/forms.py:17
-msgid "Formato deve ser XX.XXX.XXX/XXXX-XX"
+msgid ""
 "Input can either be of the format XX.XXX.XXX/XXXX-XX or be a group of 14 "
 "digits."
 msgstr ""
@@ -1130,13 +1190,25 @@ msgstr "Slug"
 msgid "Category"
 msgstr "Categoria"
 
-#: magcore/publisher/models.py:37
+#: magcore/publisher/models.py:37 magcore/publisher/models.py:113
 msgid "interest category"
 msgstr "Categoria"
 
 #: magcore/publisher/models.py:45
 msgid "Channel"
 msgstr "Canal"
+
+#: magcore/publisher/models.py:56
+#, fuzzy
+#| msgid "Interest Channel and Category"
+msgid "Interest Channel"
+msgstr "Canal de Interesse e Categoria"
+
+#: magcore/publisher/models.py:57
+#, fuzzy
+#| msgid "interest category"
+msgid "Interest Category"
+msgstr "Categoria"
 
 #: magcore/publisher/models.py:65
 msgid "Interest Channel and Category"
@@ -1151,12 +1223,14 @@ msgid "Slug"
 msgstr ""
 
 #: magcore/publisher/models.py:96 magcore/publisher/models.py:97
+#: magcore/publisher/models.py:111
 msgid "Developer"
 msgstr "Desenvolvedor"
 
-#: magcore/publisher/models.py:121 magcore/publisher/views.py:81
+#: magcore/publisher/models.py:121 magcore/publisher/models.py:133
+#: magcore/publisher/views.py:81
 msgid "Publication"
-msgstr "Publicação"
+msgstr "Título"
 
 #: magcore/publisher/models.py:135
 msgid "identifier"
@@ -1182,9 +1256,11 @@ msgstr "Use \",\" para separar as páginas"
 msgid "Issue"
 msgstr "Edição"
 
-#: magcore/publisher/models.py:148
-msgid "Issues"
-msgstr "Edições"
+#: magcore/publisher/models.py:159
+#, fuzzy
+#| msgid "Issue"
+msgid "issue"
+msgstr "Edição"
 
 #: magcore/publisher/models.py:160
 msgid "number"
@@ -1204,15 +1280,11 @@ msgstr "Editora salva com sucesso"
 
 #: magcore/publisher/views.py:71
 msgid "Publication successfully saved."
-msgstr "Publicação salva com sucesso"
+msgstr "Título salvo com sucesso"
 
 #: magcore/templates/base.html:24 magcore/templates/base_old.html:35
 msgid "Advertisers"
 msgstr "Anunciantes"
-
-#: magcore/templates/base.html:26 magcore/templates/base_old.html:37
-msgid "Advertisements"
-msgstr "Anúncios"
 
 #: magcore/templates/base.html:40
 msgid "LOGOUT"
@@ -1238,7 +1310,7 @@ msgstr ""
 msgid "Profile"
 msgstr "Perfil"
 
-#: magdevel/settings.py:303
+#: magdevel/settings.py:304
 msgid "Brazil"
 msgstr "Brasil"
 
