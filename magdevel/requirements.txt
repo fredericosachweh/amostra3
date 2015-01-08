@@ -47,3 +47,5 @@ django-compressor==1.4
 humanize==0.5.1
 django-libsass==0.2
 django-geoip==0.5.1
+sorl-thumbnail==12.2
+redis==2.10.3
