@@ -71,6 +71,7 @@ INSTALLED_APPS = (
     'localflavor',
     'reversion',
     'password_reset',
+    'sorl.thumbnail',
     'magad',
     'magcore.log',
     'magcore.identify',
@@ -100,38 +101,6 @@ MIDDLEWARE_CLASSES = (
     'django_user_agents.middleware.UserAgentMiddleware',
 )
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': ("[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] "
-                       "%(message)s"),
-            'datefmt': '%d/%b/%Y %H:%M:%S'
-        },
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
-    },
-    'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
-        },
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-            'formatter': 'simple',
-        },
-    },
-    'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
-    },
-}
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -195,6 +164,7 @@ BOWER_INSTALLED_APPS = (
     'jquery-maskedinput#1.4.0',
     'font-awesome#4.2.0',
     'highcharts-release',
+    'open-sans-fontface'
 )
 
 COMPRESS_PRECOMPILERS = (
@@ -217,6 +187,17 @@ COMPRESS_ROOT = STATIC_ROOT
 COMPRESS_URL = STATIC_URL
 COMPRESS_ENABLE = True
 COMPRESS_OFFLINE = True
+COMPRESS_OUTPUT_DIR = ''
+
+
+# SORL THUMBNAIL SETTINGS
+THUMBNAIL_DEBUG = DEBUG
+THUMBNAIL_PREFIX = 'thumbnails/'
+THUMBNAIL_QUALITY = 70
+THUMBNAIL_FORMAT= 'PNG'
+THUMBNAIL_KVSTORE = 'sorl.thumbnail.kvstores.redis_kvstore.KVStore'
+THUMBNAIL_REDIS_HOST = 'localhost'
+THUMBNAIL_REDIS_PORT = 6379
 
 # S3 KEYS
 S3_ACCESS_KEY_ID = 'AKIAIHGAT5XEG7W4JVVA'
