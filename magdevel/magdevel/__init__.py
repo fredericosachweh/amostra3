@@ -19,5 +19,6 @@ def custom_exception_handler(exc):
     else:
         if settings.DEBUG:
             logger.error(traceback.format_exc())
-
+    if settings.DEBUG:
+        print exc.detail
     return response

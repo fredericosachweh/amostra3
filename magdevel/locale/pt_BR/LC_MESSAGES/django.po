@@ -400,9 +400,9 @@ msgstr "Finaliza em"
 
 #: magad/reports/templates/report_advertisement_channel.html:9
 #, fuzzy
-#| msgid "Planned Insertions"
-msgid "Channel Adsertions"
-msgstr "Insercões planejadas"
+#| msgid "Insertions per channel"
+msgid "Insertions per channel"
+msgstr "Insercões por canal"
 
 #: magad/reports/templates/report_advertisement_device.html:16
 msgid "Total Embarques por dispositivo"
@@ -909,23 +909,23 @@ msgstr "CEP"
 
 #: magcore/company/models.py:14
 msgid "Legal Name"
-msgstr ""
+msgstr "Razão Social"
 
 #: magcore/company/models.py:15
 msgid "Trade Name"
-msgstr ""
+msgstr "Nome"
 
 #: magcore/company/models.py:16
 msgid "Tax ID"
-msgstr ""
+msgstr "CNPJ"
 
 #: magcore/company/models.py:17
 msgid "Tax ID format varies in each country. In Brazil it is the CNPJ."
-msgstr ""
+msgstr "CNPJ"
 
 #: magcore/company/models.py:19
 msgid "The city where this company is based."
-msgstr ""
+msgstr "Cidade"
 
 #: magcore/company/models.py:19
 msgid "City"
