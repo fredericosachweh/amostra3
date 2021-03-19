@@ -15,7 +15,7 @@ django-ipware==0.0.8
 django-password-reset==0.7
 django-reversion==1.8.4
 django-user-agents==0.3.0
-djangorestframework==2.4.2
+djangorestframework==3.11.2
 extras==0.0.3
 factory-boy==2.4.1
 fuzzywuzzy==0.3.2
